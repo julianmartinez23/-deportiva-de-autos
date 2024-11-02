@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas de Coches Deportivos</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #FFFAEF; /* Beige claro */
+            color: #333; /* Gris oscuro para el texto */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff; /* Blanco para el título */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080; /* Azul más claro para el menú */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FF4500; /* Naranja para el subrayado */
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF4500; /* Naranja brillante */
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .offer-container {
+            padding: 20px;
+        }
+        .offer-card {
+            background-color: #fff; /* Fondo blanco para las tarjetas */
+            border-radius: 10px; /* Esquinas redondeadas */
+            margin: 15px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px; /* Ancho máximo de las tarjetas */
+            text-align: left; /* Alinear texto a la izquierda */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+        }
+        .offer-card img {
+            max-width: 100%; /* Asegurar que la imagen no se desborde */
+            border-radius: 10px; /* Esquinas redondeadas para la imagen */
+        }
+        .offer-card h2 {
+            color: #003366; /* Azul oscuro para el título */
+            margin: 15px 0;
+        }
+        .offer-card p {
+            font-size: 1.1em;
+            color: #333; /* Gris oscuro para el texto */
+        }
+        footer {
+            background-color: #003366; /* Azul oscuro para el pie de página */
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .logo {
+            max-width: 100px; /* Ajusta el tamaño máximo del logo */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Yellow and Black Illustrative Automotive Luxury Car Logo.png" alt="Logo de la Tienda de Coches Deportivos" class="logo">
+        <h1>Speed Pursuit</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="servicios.html">servicios</a>
+        <a href="blog.html">blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+    <div class="offer-container">
+        <div class="offer-card">
+            <img src="ferrari_offer.jpeg" alt="Ferrari F8 Tributor en Oferta">
+            <h2>Ferrari F8 Tributor</h2>
+            <p>Precio Original: $300,000</p>
+            <p>Precio con Oferta: $270,000</p>
+            <p>Descripción: Aprovecha esta oferta exclusiva en el Ferrari F8 Tributor. Este modelo icónico ahora está disponible a un precio especial con un descuento significativo.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="mustang_offer.jpg" alt="Mustang GT en Oferta">
+            <h2>Mustang GT</h2>
+            <p>Precio Original: $250,000</p>
+            <p>Precio con Oferta: $220,000</p>
+            <p>Descripción: Disfruta del Mustang GT a un precio reducido. Con un diseño clásico y potencia impresionante, esta oferta es perfecta para los entusiastas de los coches deportivos.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="lamborghini_offer.jpg" alt="Lamborghini Huracán en Oferta">
+            <h2>Lamborghini Huracán</h2>
+            <p>Precio Original: $280,000</p>
+            <p>Precio con Oferta: $250,000</p>
+            <p>Descripción: No te pierdas esta oferta en el Lamborghini Huracán. Con su motor V10 y diseño exclusivo, este coche ofrece una experiencia de conducción única.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="porsche_offer.webp" alt="Porsche 911 Turbo S en Oferta">
+            <h2>Porsche 911 Turbo S</h2>
+            <p>Precio Original: $220,000</p>
+            <p>Precio con Oferta: $200,000</p>
+            <p>Descripción: El Porsche 911 Turbo S está disponible a un precio especial. Con su rendimiento superior y tecnología avanzada, esta oferta es una oportunidad que no querrás dejar pasar.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="mclaren_offer.jpg" alt="McLaren 720S en Oferta">
+            <h2>McLaren 720S</h2>
+            <p>Precio Original: $310,000</p>
+            <p>Precio con Oferta: $290,000</p>
+            <p>Descripción: Aprovecha esta oferta en el McLaren 720S. Con su velocidad y diseño aerodinámico, es el coche perfecto para quienes buscan emoción y lujo.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Coches Deportivos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

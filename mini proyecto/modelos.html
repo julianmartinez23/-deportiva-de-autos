@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Coches Deportivos</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #FFFAEF; /* Beige claro */
+            color: #333; /* Gris oscuro para el texto */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff; /* Blanco para el título */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080; /* Azul más claro para el menú */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FF4500; /* Naranja para el subrayado */
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF4500; /* Naranja brillante */
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .model-container {
+            padding: 20px;
+        }
+        .model-card {
+            background-color: #fff; /* Fondo blanco para las tarjetas */
+            border-radius: 10px; /* Esquinas redondeadas */
+            margin: 15px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px; /* Ancho máximo de las tarjetas */
+            text-align: left; /* Alinear texto a la izquierda */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+        }
+        .model-card img {
+            max-width: 100%; /* Asegurar que la imagen no se desborde */
+            border-radius: 10px; /* Esquinas redondeadas para la imagen */
+        }
+        .model-card h2 {
+            color: #003366; /* Azul oscuro para el título */
+            margin: 15px 0;
+        }
+        .model-card p {
+            font-size: 1.1em;
+            color: #333; /* Gris oscuro para el texto */
+        }
+        footer {
+            background-color: #003366; /* Azul oscuro para el pie de página */
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .logo {
+            max-width: 100px; /* Ajusta el tamaño máximo del logo */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Yellow and Black Illustrative Automotive Luxury Car Logo.png" alt="Logo de la Tienda de Coches Deportivos" class="logo">
+        <h1>Speed Pursuit</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="servicios.html">servicios</a>
+        <a href="blog.html">blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+    <div class="model-container">
+        <div class="model-card">
+            <img src="ferrari.jpeg" alt="Ferrari F8 Tributor">
+            <h2>Ferrari F8 Tributor</h2>
+            <p>Precio: $300,000</p>
+            <p>Velocidad máxima: 350 km/h</p>
+            <p>Motor: 3.9L V8</p>
+            <p>Potencia: 710 hp</p>
+            <p>Descripción: El Ferrari F8 Tributo es el modelo de serie más potente y dinámico en la historia de Ferrari. Ofrece un rendimiento de primera clase con un motor V8 turboalimentado.</p>
+        </div>
+
+        <div class="model-card">
+            <img src="mustang.jpg" alt="Mustang GT">
+            <h2>Mustang GT</h2>
+            <p>Precio: $250,000</p>
+            <p>Velocidad máxima: 330 km/h</p>
+            <p>Motor: 5.0L V8</p>
+            <p>Potencia: 661 hp</p>
+            <p>Descripción: El Mustang GT combina un diseño clásico con tecnología moderna. Su motor V8 ofrece un rendimiento impresionante y una experiencia de conducción emocionante.</p>
+        </div>
+
+        <div class="model-card">
+            <img src="lamborghini.jpg" alt="Lamborghini Huracán">
+            <h2>Lamborghini Huracán</h2>
+            <p>Precio: $280,000</p>
+            <p>Velocidad máxima: 325 km/h</p>
+            <p>Motor: 5.2L V10</p>
+            <p>Potencia: 631 hp</p>
+            <p>Descripción: El Lamborghini Huracán es una obra maestra de diseño y tecnología. Su motor V10 proporciona una aceleración impresionante y un sonido característico.</p>
+        </div>
+
+        <div class="model-card">
+            <img src="porches.webp" alt="Porsche 911 Turbo S">
+            <h2>Porsche 911 Turbo S</h2>
+            <p>Precio: $220,000</p>
+            <p>Velocidad máxima: 330 km/h</p>
+            <p>Motor: 3.8L H6</p>
+            <p>Potencia: 640 hp</p>
+            <p>Descripción: El Porsche 911 Turbo S es conocido por su equilibrio y precisión. Ofrece una experiencia de conducción excepcional con tecnología de vanguardia.</p>
+        </div>
+
+        <div class="model-card">
+            <img src="Mclaren.jpg" alt="McLaren 720S">
+            <h2>McLaren 720S</h2>
+            <p>Precio: $310,000</p>
+            <p>Velocidad máxima: 341 km/h</p>
+            <p>Motor: 4.0L V8</p>
+            <p>Potencia: 710 hp</p>
+            <p>Descripción: El McLaren 720S ofrece una aceleración fulgurante y una conducción precisa. Su diseño aerodinámico y motor V8 hacen de este modelo una joya de la ingeniería.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Coches Deportivos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

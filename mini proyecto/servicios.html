@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Tienda de Coches Deportivos</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #FFFAEF; /* Beige claro */
+            color: #333; /* Gris oscuro para el texto */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff; /* Blanco para el título */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080; /* Azul más claro para el menú */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FF4500; /* Naranja para el subrayado */
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF4500; /* Naranja brillante */
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .services-container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .services-intro {
+            background-color: #fff; /* Fondo blanco para la introducción */
+            border-radius: 10px; /* Esquinas redondeadas */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            margin-bottom: 20px;
+        }
+        .services-intro h2 {
+            color: #003366; /* Azul oscuro para el título */
+            margin-bottom: 15px;
+        }
+        .services-list {
+            background-color: #fff; /* Fondo blanco para la lista de servicios */
+            border-radius: 10px; /* Esquinas redondeadas */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+        }
+        .services-list h3 {
+            color: #003366; /* Azul oscuro para el título de cada servicio */
+            margin-bottom: 10px;
+        }
+        .services-list p {
+            font-size: 1.1em;
+            color: #333; /* Gris oscuro para el texto */
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #003366; /* Azul oscuro para el pie de página */
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .logo {
+            max-width: 100px; /* Ajusta el tamaño máximo del logo */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Yellow and Black Illustrative Automotive Luxury Car Logo.png" alt="Logo de la Tienda de Coches Deportivos" class="logo">
+        <h1>Speed Pursuit</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="servicios.html">servicios</a>
+        <a href="blog.html">blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="services-container">
+        <div class="services-intro">
+            <h2>Servicios que Ofrecemos</h2>
+            <p>En Speed Pursuit, nos dedicamos a proporcionar una experiencia completa en la compra de coches deportivos. Nuestro equipo está comprometido en ofrecer los mejores servicios para satisfacer todas tus necesidades automovilísticas.</p>
+        </div>
+
+        <div class="services-list">
+            <h3>Compra y Venta de Coches Deportivos</h3>
+            <p>Ofrecemos una amplia gama de coches deportivos de las mejores marcas. Ya sea que estés buscando el último modelo o un coche clásico, tenemos opciones para todos los gustos y presupuestos.</p>
+
+            <h3>Asesoramiento Personalizado</h3>
+            <p>Nuestro equipo de expertos te guiará en el proceso de selección del coche perfecto para ti. Proporcionamos asesoramiento sobre características, opciones de financiamiento y más.</p>
+
+            <h3>Servicios de Mantenimiento y Reparación</h3>
+            <p>Contamos con un taller especializado en coches deportivos. Ofrecemos servicios de mantenimiento preventivo y reparaciones para asegurar que tu coche esté siempre en óptimas condiciones.</p>
+
+            <h3>Pruebas de Manejo</h3>
+            <p>Antes de tomar una decisión, puedes probar los coches que te interesan. Nuestro objetivo es asegurarnos de que te sientas completamente cómodo con tu elección.</p>
+
+            <h3>Financiamiento</h3>
+            <p>Disponemos de opciones de financiamiento para facilitar la compra de tu coche deportivo. Trabajamos con varias entidades financieras para ofrecerte las mejores condiciones.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Coches Deportivos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

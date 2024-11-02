@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Coches Deportivos</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #FFFAEF; /* Beige claro */
+            color: #333; /* Gris oscuro para el texto */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff; /* Blanco para el título */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080; /* Azul más claro para el menú */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FF4500; /* Naranja para el subrayado */
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF4500; /* Naranja brillante */
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .search-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        .search-container button, .search-container select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #FF4500; /* Naranja para botones */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover, .search-container select:hover {
+            background-color: #FF6600; /* Naranja más oscuro para hover */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra las tarjetas horizontalmente */
+            padding: 20px;
+            min-height: 80vh; /* Asegura que las tarjetas estén centradas verticalmente */
+            box-sizing: border-box;
+        }
+        .car-card {
+            background-color: #fff; /* Fondo blanco para las tarjetas */
+            border-radius: 10px; /* Esquinas redondeadas */
+            margin: 15px; /* Espaciado entre las tarjetas */
+            padding: 20px;
+            width: 300px; /* Ancho fijo de la tarjeta */
+            text-align: center; /* Centrar el texto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+        }
+        .car-card img {
+            max-width: 100%; /* Asegurar que la imagen no se desborde */
+            border-radius: 10px; /* Esquinas redondeadas para la imagen */
+            transition: transform 0.4s ease;
+        }
+        .car-card h2 {
+            color: #003366; /* Azul oscuro para el título */
+            margin: 15px 0;
+            transition: color 0.4s ease;
+        }
+        .car-card p {
+            font-size: 1.1em;
+            color: #333; /* Gris oscuro para el texto */
+        }
+        .car-card:hover {
+            transform: translateY(-15px) scale(1.05); /* Desplazamiento hacia arriba y ampliación al pasar el cursor */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al hacer hover */
+            background-color: #f0f0f0; /* Gris claro al hacer hover */
+        }
+        .car-card:hover img {
+            transform: scale(1.1); /* Aumentar el tamaño de la imagen ligeramente al hacer hover */
+        }
+        .car-card:hover h2 {
+            color: #004080; /* Azul más claro para el título al hacer hover */
+        }
+        .history-section {
+            background-color: #e6e6e6; /* Gris claro para la sección de historia */
+            padding: 40px 20px;
+            color: #333;
+        }
+        .history-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .history-item {
+            background-color: #fff; /* Fondo blanco para los elementos de historia */
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+            max-width: 800px; /* Ancho máximo de los elementos de historia */
+        }
+        .history-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #003366; /* Azul oscuro para el pie de página */
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .logo {
+            max-width: 100px; /* Ajusta el tamaño máximo del logo */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Yellow and Black Illustrative Automotive Luxury Car Logo.png" alt="Logo de la Tienda de Coches Deportivos" class="logo">
+        <h1>Speed Pursuit</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="servicios.html">servicios</a>
+        <a href="blog.html">blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+    <div class="search-container">
+        <input type="text" placeholder="Buscar coches...">
+        <button>Buscar</button>
+        <select>
+            <option value="">Filtrar por precio</option>
+            <option value="0-100000">Hasta $100,000</option>
+            <option value="100000-200000">$100,000 - $200,000</option>
+            <option value="200000-300000">$200,000 - $300,000</option>
+            <option value="300000">Más de $300,000</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="car-card">
+            <img src="ferrari.jpeg" alt="Ferrari F8 Tributor">
+            <h2>Ferrari F8 Tributor</h2>
+            <p>Precio: $300,000</p>
+            <p>Velocidad máxima: 350 km/h</p>
+            <p>Motor: 3.9L V8</p>
+            <p>Potencia: 710 hp</p>
+        </div>
+
+        <div class="car-card">
+            <img src="mustang.jpg" alt="Mustang GT">
+            <h2>Mustang GT</h2>
+            <p>Precio: $250,000</p>
+            <p>Velocidad máxima: 330 km/h</p>
+            <p>Motor: 3.9L V8</p>
+            <p>Potencia: 661 hp</p>
+        </div>
+
+        <div class="car-card">
+            <img src="lamborghini.jpg" alt="Lamborghini Huracán">
+            <h2>Lamborghini Huracán</h2>
+            <p>Precio: $280,000</p>
+            <p>Velocidad máxima: 325 km/h</p>
+            <p>Motor: 5.2L V10</p>
+            <p>Potencia: 631 hp</p>
+        </div>
+
+        <div class="car-card">
+            <img src="porches.webp" alt="Porsche 911 Turbo S">
+            <h2>Porsche 911 Turbo S</h2>
+            <p>Precio: $220,000</p>
+            <p>Velocidad máxima: 330 km/h</p>
+            <p>Motor: 3.8L H6</p>
+            <p>Potencia: 640 hp</p>
+        </div>
+
+        <div class="car-card">
+            <img src="Mclaren.jpg" alt="McLaren 720S">
+            <h2>McLaren 720S</h2>
+            <p>Precio: $310,000</p>
+            <p>Velocidad máxima: 341 km/h</p>
+            <p>Motor: 4.0L V8</p>
+            <p>Potencia: 710 hp</p>
+        </div>
+    </div>
+
+    <section class="history-section">
+        <div class="history-item">
+            <img src="koenigsegg.jpg" alt="Koenigsegg">
+            <h3>Koenigsegg</h3>
+            <p>Fundada en 1994 en Suecia, Koenigsegg se ha establecido como un referente en la producción de coches deportivos de alto rendimiento. Su modelo más destacado, el Koenigsegg Agera RS, ha ostentado récords de velocidad mundial, demostrando la excelencia en ingeniería y diseño de la marca.</p>
+        </div>
+
+        <div class="history-item">
+            <img src="Nissan-GT-R-15-anos.jpg" alt="Nissan GT-R">
+            <h3>Nissan GT-R</h3>
+            <p>El Nissan GT-R, conocido también como "Godzilla", es un icono de los coches deportivos japoneses. Introducido en 2007, ha sido aclamado por su impresionante potencia y tecnología avanzada, ofreciendo una experiencia de conducción emocionante y precisa.</p>
+        </div>
+
+        <div class="history-item">
+            <img src="chevoret.webp" alt="Chevrolet Corvette">
+            <h3>Chevrolet Corvette</h3>
+            <p>El Chevrolet Corvette ha sido un símbolo de los coches deportivos americanos desde su debut en 1953. Con un diseño icónico y una sólida performance, el Corvette ha evolucionado a lo largo de las décadas para mantenerse a la vanguardia de la innovación y el rendimiento en el automovilismo.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Coches Deportivos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
